@@ -1,7 +1,7 @@
-package com.tw.Springboot.controller;
+package com.tw.employee.controller;
 
-import com.tw.Springboot.pojo.Employee;
-import com.tw.Springboot.service.IEmployeeService;
+import com.tw.employee.pojo.Employee;
+import com.tw.employee.service.IEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

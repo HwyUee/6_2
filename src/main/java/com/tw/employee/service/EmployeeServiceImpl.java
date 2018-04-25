@@ -1,7 +1,6 @@
-package com.tw.Springboot.service.ServiceImpl;
+package com.tw.employee.service;
 
-import com.tw.Springboot.pojo.Employee;
-import com.tw.Springboot.service.IEmployeeService;
+import com.tw.employee.pojo.Employee;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
