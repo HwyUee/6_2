@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 
@@ -56,10 +57,13 @@ public class Controller {
      * @return
      */
     @RequestMapping(value = "select.do")
-    @ResponseBody
-    public ArrayList<Employee> selectEmployee(){
 
-        return iEmployeeService.selectEmployee();
+    public ModelAndView selectEmployee(){
+
+       ArrayList<Employee> ar =  iEmployeeService.selectEmployee();
+        return new ModelAndView("index","arrEmployee",ar);
     }
+
+
 
 }
